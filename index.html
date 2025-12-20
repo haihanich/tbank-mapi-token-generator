@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPI Token Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>MAPI Token Generator</h1>
+
+    <label for="json-input">JSON</label><br>
+    <textarea id="json-input" placeholder="Paste JSON here" rows="10"></textarea>
+
+    <br><br>
+
+    <label for="password-input">Password</label><br>
+    <input type="password" id="password-input">
+    <button type="button" id="toggle-password-btn">
+        Show
+    </button>
+
+    <br><br>
+
+    <button type="button" id="generate-btn">
+        Generate token
+    </button>
+
+    <button type="button" id="clear-btn">
+        Clear
+    </button>
+
+    <br><br>
+
+    <label for="token-output">Token</label><br>
+    <input type="text" id="token-output" readonly>
+
+    <button type="button" id="copy-btn">
+        Copy
+    </button>
+
+    <br><br>
+
+    <pre id="debug-output"></pre>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
